@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vagases",
+  "info": {
+    "name": "Vagas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "descricao": {
+      "type": "richtext"
+    }
+  }
+}
