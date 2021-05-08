@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "vagases",
+  "collectionName": "jobs",
   "info": {
-    "name": "Vagas"
+    "name": "Job",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,12 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "titulo": {
-      "type": "string",
-      "required": true
-    },
-    "descricao": {
-      "type": "richtext"
+    "title": {
+      "type": "string"
     }
   }
 }
