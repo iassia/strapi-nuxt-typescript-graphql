@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <li v-for="job in jobs" :key="job.id">{{ job.title }}</li>
+      <li v-for="job in jobs" :key="job.id">{{ job.id }} - {{ job.title }}</li>
     </ul>
   </div>
 </template>
@@ -19,7 +19,7 @@ import { Job } from "~/apollo/types/gql-types"
     },
   },
 })
-export default class YourComponent extends Vue {
+export default class Index extends Vue {
 }
 </script>
 
