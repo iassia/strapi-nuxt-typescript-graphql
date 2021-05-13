@@ -1,7 +1,7 @@
 version: '3'
 services:
   strapi:
-    image: strapi/strapi
+    image: strapi/strapi:3.6-node12-alpine
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_NAME: strapi
@@ -17,7 +17,7 @@ services:
       - postgres
 
   postgres:
-    image: postgres
+    image: postgres:13.2
     environment:
       POSTGRES_DB: strapi
       POSTGRES_USER: strapi
